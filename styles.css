@@ -1,0 +1,173 @@
+/* Reset Styles */
+* {
+    margin: 0  ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    border : rgba(255, 255, 255, 0.1) solid ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgb(56, 56, 56);
+    
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: white;
+    background: rgb(0, 234, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    background: darkred;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('wp2691479.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:0;
+}
+
+/* Overlay for Slogan */
+.overlay {
+    background: rgb(41, 41, 41);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.backgroungimg {
+    height: 100vh;
+    background: url('wp2691496.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:0;
+    
+}
+
+.container {
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background: #e74c3c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+.result {
+    background: #ecf0f1;
+    color: #333;
+    padding: 15px;
+    border-left: 5px solid #27ae60;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.info {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info h2, .info h3 {
+    color: #2980b9;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info ul li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #e67e22;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007acc;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+.backgroungimgs {
+    height: 100vh;
+    background: url('wp2691479.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:1;
+}

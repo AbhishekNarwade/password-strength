@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Cracker</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <h2>Test Password Strength</h2>
+        <label for="target-password">Enter Password to Crack:</label>
+        <input type="text" id="target-password" placeholder="Enter password here">
+
+        <label for="password-file">Upload Password List (.txt):</label>
+        <input type="file" id="password-file" accept=".txt">
+
+        <button onclick="crackPassword()">Start Cracking</button>
+        <button onclick="startBruteForce()">Brute Force Password</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <!-- Information Section -->
+    <section class="info">
+        <h2>Why Should Passwords Be Strong?</h2>
+        <p>
+            Weak passwords are one of the biggest security risks. Hackers use various techniques to break into accounts, 
+            steal personal data, and compromise security. Using strong passwords can help prevent attacks and protect 
+            your information.
+        </p>
+
+        <h3>Common Types of Password Hacking</h3>
+        <ul>
+            <li><strong>Brute Force Attack:</strong> Trying every possible combination until the password is cracked.</li>
+            <li><strong>Dictionary Attack:</strong> Using a list of commonly used passwords.</li>
+            <li><strong>Phishing:</strong> Tricking users into revealing their passwords.</li>
+            <li><strong>Keylogging:</strong> Capturing what users type on their keyboards.</li>
+            <li><strong>Credential Stuffing:</strong> Using leaked passwords from data breaches.</li>
+        </ul>
+
+        <h3>How to Create a Strong Password</h3>
+        <ul>
+            <li>Use at least **12-16 characters**.</li>
+            <li>Include **uppercase, lowercase, numbers, and symbols**.</li>
+            <li>Avoid common words (e.g., `password123`, `admin`, `qwerty`).</li>
+            <li>Use a password manager to generate and store secure passwords.</li>
+            <li>Enable two-factor authentication (2FA) for extra security.</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2024 Password Security Tool. Stay Safe Online!
+    </footer>
+
+   
+
+</body>
+</html>

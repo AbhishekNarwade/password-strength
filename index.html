@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Cracking System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Password Cracking System</h1>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="#">LOG IN</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Full Background Image -->
+    <section class="hero">
+        <div class="overlay">
+            <h2>Unlock the Future of Security</h2>
+        </div>
+    </section>
+
+  <div class = "backgroungimg">
+
+      <div class="container">
+         <h2>Test Password Strength</h2>
+         <label for="target-password">Enter Password to Crack:</label>
+         <input type="text" id="target-password" placeholder="Enter password here">
+ 
+         <label for="password-file">Upload Password List (.txt):</label>
+         <input type="file" id="password-file" accept=".txt">
+
+         <button onclick="crackPassword()">Start Cracking</button>
+         <button onclick="startBruteForce()">Brute Force Password</button>
+ 
+         <div id="result" class="result"></div>
+      </div>
+ 
+      <!--  Information Section -->
+      <section class="info">
+         <h2>Why Should Passwords Be Strong?</h2>
+         <p>
+             Weak passwords are one of the biggest security risks. Hackers use various techniques to break into accounts, 
+             steal personal data, and compromise security. Using strong passwords can help prevent attacks and protect 
+             your information.
+         </p>
+ 
+         <h3>Common Types of Password Hacking</h3>
+         <ul>
+             <li><strong>Brute Force Attack:</strong> Trying every possible combination until the password is cracked.</li>
+             <li><strong>Dictionary Attack:</strong> Using a list of commonly used passwords.</li>
+             <li><strong>Phishing:</strong> Tricking users into revealing their passwords.</li>
+             <li><strong>Keylogging:</strong> Capturing what users type on their keyboards.</li>
+             <li><strong>Credential Stuffing:</strong> Using leaked passwords from data breaches.</li>
+         </ul>
+  
+         <h3>How to Create a Strong Password</h3>
+         <ul>
+             <li>Use at least **12-16 characters**.</li>
+             <li>Include **uppercase, lowercase, numbers, and symbols**.</li>
+             <li>Avoid common words (e.g., `password123`, `admin`, `qwerty`).</li>
+             <li>Use a password manager to generate and store secure passwords.</li>
+             <li>Enable two-factor authentication (2FA) for extra security.</li>
+         </ul>
+      </section>
+   </div>
+  <div class = "backgroungimgs">
+      <div class="container">
+          <h2>Password Encoder & Decoder</h2>
+
+          <input type="password" id="password" placeholder="Enter password">
+          <button onclick="encodePassword()">Encode</button>
+          <p class="output" id="encodedOutput"></p>
+
+          <input type="text" id="encodedText" placeholder="Enter encoded text">
+          <button onclick="decodePassword()">Decode</button>
+          <p class="output" id="decodedOutput"></p>
+       </div>
+
+        <!--  Information Section -->
+    <section class="info">
+     <h2>Why Encode & Decode Passwords?</h2>
+     <p>
+          Encoding and decoding passwords are techniques used for data transformation rather than security. 
+         Unlike hashing, which is irreversible, encoding can be reversed, making it unsuitable for storing 
+         secure passwords but useful in certain applications.
+     </p>
+  
+     <h3>Common Uses of Password Encoding & Decoding</h3>
+     <ul>
+         <li><strong>Data Transmission:</strong> Encodes passwords for safe transfer between systems.</li>
+         <li><strong>Basic Obfuscation:</strong> Hides passwords from casual viewers but not from attackers.</li>
+         <li><strong>Storage in Non-Secure Systems:</strong> Used where security is not a primary concern.</li>
+        <li><strong>Legacy System Compatibility:</strong> Some older systems require encoding for compatibility.</li>
+     </ul>
+  
+     <h3>Common Types of Encoding</h3>
+     <ul>
+         <li><strong>Base64 Encoding:</strong> Converts binary data into a text format.</li>
+         <li><strong>URL Encoding:</strong> Encodes special characters in URLs.</li>
+         <li><strong>Hexadecimal Encoding:</strong> Converts characters to hex format.</li>
+         <li><strong>ROT13 Encoding:</strong> A simple letter substitution cipher.</li>
+     </ul>
+ 
+     <h3>Security Limitations</h3>
+     <ul>
+         <li><strong>Encoding is NOT Encryption:</strong> It does not provide security, as encoded data can be easily decoded.</li>
+         <li><strong>Not Suitable for Password Storage:</strong> Unlike hashing (e.g., bcrypt, SHA-256), encoded passwords can be reversed.</li>
+         <li><strong>Prone to Attacks:</strong> Attackers can decode encoded passwords using simple tools.</li>
+     </ul>
+ 
+     <h3>Best Practices for Secure Password Handling</h3>
+     <ul>
+         <li>Use hashing instead of encoding for password storage (e.g., bcrypt, Argon2, PBKDF2).</li>
+         <li>Never store passwords in a reversible format.</li>
+         <li>Use TLS encryption for secure password transmission.</li>
+         <li>Enable two-factor authentication (2FA) for extra security.</li>
+     </ul>
+    </section>
+
+  </div>
+ 
+
+    
+</body>
+</html>

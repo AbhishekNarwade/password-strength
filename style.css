@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("1_6KeR-HSW1-I5znK8xvfDiQ.webp");
+    background-repeat: no-repeat;
+    background-size: 1800px 2400px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background: #e74c3c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+.result {
+    background: #ecf0f1;
+    color: #333;
+    padding: 15px;
+    border-left: 5px solid #27ae60;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.info {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info h2, .info h3 {
+    color: #2980b9;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info ul li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #e67e22;
+    font-size: 16px;
+}
